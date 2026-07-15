@@ -8,7 +8,7 @@ from prompts import SYSTEM_PROMPT
 
 load_dotenv()
 
-MODEL_NAME = "gemini-3.5-flash"
+MODEL_NAME = "gemini-2.5-flash"
 
 client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
