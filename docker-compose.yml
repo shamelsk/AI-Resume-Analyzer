@@ -1,0 +1,8 @@
+services:
+  ai-resume-analyser:
+    build:
+      context: .
+    container_name: AI-Resume-Analyser
+    ports:
+      - "8501:8501"
+    restart: unless-stopped

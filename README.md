@@ -167,6 +167,36 @@ Generate your API key from Google AI Studio.
 ```bash
 streamlit run app.py
 ```
+## 🐳 Run with Docker
+
+### Using Docker
+
+Build the image:
+
+```bash
+docker build -t resumeiq-ai .
+```
+
+Run the container:
+
+```bash
+docker run -p 8501:8501 --env-file .env resumeiq-ai
+```
+
+### Using Docker Compose
+
+Build and start the application:
+
+```bash
+docker compose up --build
+```
+
+Or, if the image has already been built:
+
+```bash
+docker compose up
+```
+
 
 ---
 
